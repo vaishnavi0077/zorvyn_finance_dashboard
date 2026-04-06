@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="description" content="Modern Finance Dashboard UI - Track your transactions, manage expenses, and visualize financial data with ease." />
+    <meta name="keywords" content="finance, dashboard, transactions, expenses, analytics, money management" />
+    <meta name="author" content="Finance Dashboard Team" />
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Page Title -->
+    <title>Finance Dashboard UI</title>
+
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Finance Dashboard UI" />
+    <meta property="og:description" content="Modern Finance Dashboard UI - Track your transactions, manage expenses, and visualize financial data with ease." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta property="og:url" content="%PUBLIC_URL%" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Finance Dashboard UI" />
+    <meta name="twitter:description" content="Modern Finance Dashboard UI - Track your transactions, manage expenses, and visualize financial data with ease." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter-image.png" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="%PUBLIC_URL%/favicon.ico" as="image" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Root div for React rendering -->
+    <div id="root"></div>
+
+    <!-- Loading fallback (shown before React loads) -->
+    <div id="initial-loading" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    ">
+      <div style="
+        text-align: center;
+        color: white;
+      ">
+        <div style="
+          width: 40px;
+          height: 40px;
+          border: 3px solid rgba(255, 255, 255, 0.3);
+          border-top: 3px solid white;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin: 0 auto 16px;
+        "></div>
+        <h2 style="
+          margin: 0 0 8px 0;
+          font-size: 24px;
+          font-weight: 600;
+        ">Finance Dashboard</h2>
+        <p style="
+          margin: 0;
+          opacity: 0.8;
+          font-size: 14px;
+        ">Loading your financial data...</p>
+      </div>
+    </div>
+
+    <!-- Loading animation CSS -->
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      #initial-loading {
+        display: flex;
+      }
+
+      /* Hide loading screen when React app loads */
+      #root:empty + #initial-loading {
+        display: flex;
+      }
+
+      #root:not(:empty) + #initial-loading {
+        display: none;
+      }
+    </style>
+  </body>
+</html>
