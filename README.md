@@ -94,9 +94,39 @@ npm install recharts lucide-react uuid
 - Budget planning and goal tracking features
 - Mobile app development using React Native
 
+
+---
+
+## 📸 Screenshots
+
+### 📊 Dashboard Overview
+![Dashboard](screenshots/Dashboard.png)
+
+---
+
+### 📄 Transactions Page
+![Transactions](screenshots/transactions.png)
+
+---
+
+### ➕ Add Transaction
+![Add Transaction](screenshots/add_transactions.png)
+
+---
+
+### ✏️ Edit Transaction
+![Edit Transaction](screenshots/edit_transactions.png)
+
+---
+
+### 📈 Insights & Analytics
+![Insights](screenshots/insights.png)
+
+---
+
 ## Author
 
-**Khushi Yuwaraj Patil**  
+**Vaishnavi Annasaheb Garad**  
 Frontend Developer / Engineering Student
 
 ---
