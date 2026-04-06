@@ -61,6 +61,22 @@ src/
 
 **Requirements**: Node.js (version 14 or higher)
 
+### Additional Dependencies
+
+The project uses the following external libraries:
+
+- **Recharts** – For data visualization charts  
+- **Lucide React** – For modern icons  
+- **UUID** – For generating unique transaction IDs  
+
+These dependencies will be installed automatically when running:
+
+npm install
+
+If needed manually:
+
+npm install recharts lucide-react uuid
+
 ## Approach & Design Decisions
 
 - **Context API**: Used for centralized state management to handle transactions, filters, and user roles across components
