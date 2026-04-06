@@ -25,9 +25,9 @@ export const AppProvider = ({ children }) => {
     return savedRole || 'Viewer';
   });
   const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme ? savedTheme === 'dark' : false;
-  });
+  const savedTheme = localStorage.getItem('theme');
+  return savedTheme ? savedTheme === 'dark' : true;
+});
   const [filters, setFilters] = useState({
     searchText: '',
     selectedCategory: 'All',
